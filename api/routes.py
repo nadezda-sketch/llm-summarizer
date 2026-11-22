@@ -1,6 +1,9 @@
-import uuid, logging
+import logging
+import uuid
+
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
+
 from config.settings import settings
 from services.pipeline import summarize
 

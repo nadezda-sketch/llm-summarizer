@@ -1,11 +1,13 @@
-import time, threading
+import threading
+import time
 from collections import OrderedDict
+
 
 class TTLCache:
     def __init__(self, ttl: int, max_size: int):
         self._ttl = ttl
         self._max = max_size
-        self._data: "OrderedDict[str, tuple[float, object]]" = OrderedDict()
+        self._data: OrderedDict[str, tuple[float, object]] = OrderedDict()
         self._lock = threading.Lock()
 
     def get(self, key: str):

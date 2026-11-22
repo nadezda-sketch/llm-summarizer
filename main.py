@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 from api.routes import router
 from config.settings import settings
 from infra.logging import setup_logging

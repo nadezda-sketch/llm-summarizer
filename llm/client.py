@@ -1,6 +1,8 @@
 import asyncio
 import logging
+
 import httpx
+
 from config.settings import settings
 
 log = logging.getLogger("llm")

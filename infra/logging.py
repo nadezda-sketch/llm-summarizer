@@ -1,4 +1,7 @@
-import json, logging, sys
+import json
+import logging
+import sys
+
 
 class JsonFormatter(logging.Formatter):
     def format(self, record):

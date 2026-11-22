@@ -1,5 +1,6 @@
 from services.pipeline import cache, cache_key
 
+
 def test_cache_ttl_set_get():
     cache.set("k1", "v1")
     assert cache.get("k1") == "v1"

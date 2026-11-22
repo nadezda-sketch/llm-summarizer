@@ -1,7 +1,10 @@
-import hashlib, logging, time
+import hashlib
+import logging
+import time
+
 from config.settings import settings
 from infra.cache import TTLCache
-from llm.client import call_llm, FALLBACK_TEXT, LLMError
+from llm.client import FALLBACK_TEXT, LLMError, call_llm
 from llm.prompts import build_messages
 from services.postprocess import clean, is_valid
 
